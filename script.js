@@ -9,7 +9,7 @@ function updateItem(currentItemId, totalItemPriceId, singleItemPrice, action) {
         document.getElementById('subtotal').innerText = parseFloat(document.getElementById('subtotal').innerText) + singleItemPrice;
         tax = (parseFloat(document.getElementById('subtotal').innerText) * 0.1).toFixed(2);
         document.getElementById('tax').innerText = tax;
-        document.getElementById('total').innerText = parseFloat(document.getElementById('subtotal').innerText) + tax;
+        document.getElementById('total').innerText = parseFloat(document.getElementById('subtotal').innerText) + parseFloat(tax);
     }
     else if (action == 'remove') {
         document.getElementById(currentItemId).value = currentItemQuantity - 1;
@@ -17,7 +17,7 @@ function updateItem(currentItemId, totalItemPriceId, singleItemPrice, action) {
         document.getElementById('subtotal').innerText = parseFloat(document.getElementById('subtotal').innerText) - singleItemPrice;
         tax = (parseFloat(document.getElementById('subtotal').innerText) * 0.1).toFixed(2);
         document.getElementById('tax').innerText = tax;
-        document.getElementById('total').innerText = parseFloat(document.getElementById('subtotal').innerText) + tax;
+        document.getElementById('total').innerText = parseFloat(document.getElementById('subtotal').innerText) + parseFloat(tax);
 
     }
 }
