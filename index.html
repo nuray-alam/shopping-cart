@@ -16,7 +16,7 @@
       <div class="container">
          <div class="cart">
             <div class="col-md-12 col-lg-10 mx-auto">
-               <div class="cart-item">
+               <div class="cart-item" id="phone-section">
                   <div class="row">
                      <div class="col-md-7 center-item">
                         <img src="images/product-1.png" alt="">
@@ -30,12 +30,12 @@
                            <button class="btn btn-default" id="phone-add-button"><i class="fas fa-plus"></i></button>
                         </div>
                         <h5>$ <span id="phone-total-price">1219</span></h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <img src="images/remove.png" alt="" class="remove-item" id="phone-section-delete">
                      </div>
                   </div>
                </div>
 
-               <div class="cart-item">
+               <div class="cart-item" id="phone-case-section">
                   <div class="row">
                      <div class="col-md-7 center-item mx-auto">
                         <img src="images/product-2.png" alt="">
@@ -43,13 +43,13 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default" id="phone-case-remove-button"><i class="fas fa-minus"></i></button>
+                           <input type="text" class="form-control text-center" id="phone-case-current-quantity" value="1">
+                           <button class="btn btn-default" id="phone-case-add-button"><i class="fas fa-plus"></i></button>
 
                         </div>
-                        <h5>$59</h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <h5>$ <span id="phone-case-total-price">59</span></h5>
+                        <img id="phone-case-section-delete" src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
                </div>
