@@ -71,6 +71,5 @@ phoneCaseRemoveButton.addEventListener('click', function () {
 
 const phoneCaseSectionDeleteButton = document.getElementById('phone-case-section-delete');
 phoneCaseSectionDeleteButton.addEventListener('click', function () {
-    console.log('delete a click porse');
     deleteSection('phone-case-section','phone-case-total-price');
 })
