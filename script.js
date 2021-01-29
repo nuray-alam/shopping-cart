@@ -44,7 +44,9 @@ phoneAddButton.addEventListener('click', function () {
 
 const phoneRemoveButton = document.getElementById('phone-remove-button');
 phoneRemoveButton.addEventListener('click', function () {
-    updateItem('phone-current-quantity', 'phone-total-price', 1219, 'remove');
+    if (parseInt(document.getElementById('phone-current-quantity').value) != 0) {
+        updateItem('phone-current-quantity', 'phone-total-price', 1219, 'remove');
+    }
 })
 
 // phone section delete button event handlar
@@ -64,12 +66,14 @@ phoneCaseAddButton.addEventListener('click', function () {
 
 const phoneCaseRemoveButton = document.getElementById('phone-case-remove-button');
 phoneCaseRemoveButton.addEventListener('click', function () {
-    updateItem('phone-case-current-quantity', 'phone-case-total-price', 59, 'remove');
+    if (parseInt(document.getElementById('phone-case-current-quantity').value) != 0) {
+        updateItem('phone-case-current-quantity', 'phone-case-total-price', 59, 'remove');
+    }
 })
 
 // phone case section delete button event handlar
 
 const phoneCaseSectionDeleteButton = document.getElementById('phone-case-section-delete');
 phoneCaseSectionDeleteButton.addEventListener('click', function () {
-    deleteSection('phone-case-section','phone-case-total-price');
+    deleteSection('phone-case-section', 'phone-case-total-price');
 })
